@@ -157,6 +157,50 @@
       background: linear-gradient(135deg, #0099ff, #006699);
       box-shadow: 0 0 14px #00ccff, inset 0 0 20px #00eeff;
     }
+
+    @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #game-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  #left-sidebar, #right-sidebar {
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  #board {
+    width: 95vw;
+    height: auto;
+    aspect-ratio: 7 / 6;
+  }
+
+  #controls select, button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  #status, #scoreboard {
+    font-size: 1rem;
+  }
+
+  #ohno-overlay span {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+    
   </style>
 </head>
 <body>
